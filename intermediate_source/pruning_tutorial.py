@@ -4,18 +4,13 @@ Pruning Tutorial
 =====================================
 **Author**: `Michela Paganini <https://github.com/mickypaganini>`_
 
-State-of-the-art deep learning techniques rely on over-parametrized models 
-that are hard to deploy. On the contrary, biological neural networks are 
-known to use efficient sparse connectivity. Identifying optimal  
-techniques to compress models by reducing the number of parameters in them is 
-important in order to reduce memory, battery, and hardware consumption without 
-sacrificing accuracy. This in turn allows you to deploy lightweight models on device, and guarantee 
-privacy with private on-device computation. On the research front, pruning is 
-used to investigate the differences in learning dynamics between 
-over-parametrized and under-parametrized networks, to study the role of lucky 
-sparse subnetworks and initializations
-("`lottery tickets <https://arxiv.org/abs/1803.03635>`_") as a destructive 
-neural architecture search technique, and more.
+최첨단 딥러닝 기술은 많은 파라미터를 가져서 배포가 어려운 모델들을 사용합니다. 
+반면 생물학적 신경망은 효율적인 희소 연결을 가진 것으로 알려져 있습니다.
+모델의 파라미터 개수를 줄이는 최적의 압축 기법을 아는 것은 정확도 희생 없이 메모리, 배터리, 하드웨어 소비량을 줄이는 데에 중요합니다.
+이 기법은 경량화된 모델을 기기에 배포하고, 기기에서 자체적으로 연산을 수행해 프라이버시를 보증합니다.
+연구 분야에서 가지치기(pruning)는 파라미터가 많은 신경망과 적은 신경망 사이의 학습 동역학(learning dynamics)을 분석하거나,
+파괴적 신경망 구조 탐색(destructive neural architecture search)의 일환으로서 운이 좋게 잘 구성된 희소 신경망 또는 
+초기화 기법("`lottery tickets <https://arxiv.org/abs/1803.03635>`_")의 역할을 연구하는 것 등을 목적으로 합니다.
 
 In this tutorial, you will learn how to use ``torch.nn.utils.prune`` to 
 sparsify your neural networks, and how to extend it to implement your 
