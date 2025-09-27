@@ -9,7 +9,7 @@ Pruning Tutorial
 모델의 파라미터 개수를 줄이는 최적의 압축 기법을 아는 것은 정확도 희생 없이 메모리, 배터리, 하드웨어 소비량을 줄이는 데에 중요합니다.
 이 기법은 경량화된 모델을 기기에 배포하고, 기기에서 자체적으로 연산을 수행해 프라이버시를 보증합니다.
 연구 분야에서 가지치기(pruning)는 파라미터가 많은 신경망과 적은 신경망 사이의 학습 동역학(learning dynamics)을 분석하거나,
-파괴적 신경망 구조 탐색(destructive neural architecture search)의 일환으로서 운이 좋게 잘 구성된 희소 신경망 또는 
+소거 기반 신경망 구조 탐색(NAS, neural architecture search)의 일환으로 운이 좋게 잘 구성된 희소 신경망 또는 
 초기화 기법("`lottery tickets <https://arxiv.org/abs/1803.03635>`_")의 역할을 연구하는 것 등을 목적으로 합니다.
 
 In this tutorial, you will learn how to use ``torch.nn.utils.prune`` to 
